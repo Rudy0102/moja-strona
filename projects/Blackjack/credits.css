@@ -1,0 +1,38 @@
+body{
+    background-color: #2a5421;
+    color: #fff;
+    font-size: 200%;
+}
+button:hover, .div-img img{
+    cursor: pointer;
+}
+
+.author{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.author h2{
+    margin-bottom: 10px;
+}
+.images{
+    text-align: center;
+}
+.images a{
+    color: #808000;
+}
+.images a:link{
+    color: #FFFF00;
+}
+.button-div{
+    text-align: center;
+}
+.button-div a{
+    margin: 25px 0;
+}
+.button-div a button{
+    margin: 25px 0;
+    padding: 10px;
+    width: 15%;
+    font-size: 100%;   
+}
