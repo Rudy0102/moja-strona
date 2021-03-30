@@ -1,0 +1,120 @@
+<!DOCTYPE html>                                                                     <!--Made by Robert Żółtowski-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High or Low</title>
+    <link rel="stylesheet" href="./hilo.css">
+    <script src="./hilo.js"></script>
+</head>
+<body class="disable-scrolling" id="body">
+    <section class="playscreen">
+        <div class="cardsrelative">
+            <div>
+                <img src="../Images/HiLo/tablexut.png" alt="GameTable" class="table"> <!-- That is backrground for playing screen-->
+                <img src="../Images/HiLo/Cards/2C.png" alt="2C" id="card1" class="hide">
+                <img src="../Images/HiLo/Cards/2D.png" alt="2D" id="card2" class="hide">
+                <img src="../Images/HiLo/Cards/2H.png" alt="2H" id="card3" class="hide">
+                <img src="../Images/HiLo/Cards/2S.png" alt="2S" id="card4" class="hide">
+                <img src="../Images/HiLo/Cards/3C.png" alt="3C" id="card5" class="hide">
+                <img src="../Images/HiLo/Cards/3D.png" alt="3D" id="card6" class="hide">
+                <img src="../Images/HiLo/Cards/3H.png" alt="3H" id="card7" class="hide">
+                <img src="../Images/HiLo/Cards/3S.png" alt="3S" id="card8" class="hide">
+                <img src="../Images/HiLo/Cards/4C.png" alt="4C" id="card9" class="hide">
+                <img src="../Images/HiLo/Cards/4D.png" alt="4D" id="card10" class="hide">
+                <img src="../Images/HiLo/Cards/4H.png" alt="4H" id="card11" class="hide">
+                <img src="../Images/HiLo/Cards/4S.png" alt="4S" id="card12" class="hide">
+                <img src="../Images/HiLo/Cards/5C.png" alt="5C" id="card13" class="hide">
+                <img src="../Images/HiLo/Cards/5D.png" alt="5D" id="card14" class="hide">
+                <img src="../Images/HiLo/Cards/5H.png" alt="5H" id="card15" class="hide">
+                <img src="../Images/HiLo/Cards/5S.png" alt="5S" id="card16" class="hide">
+                <img src="../Images/HiLo/Cards/6C.png" alt="6C" id="card17" class="hide">
+                <img src="../Images/HiLo/Cards/6D.png" alt="6D" id="card18" class="hide">
+                <img src="../Images/HiLo/Cards/6H.png" alt="6H" id="card19" class="hide">
+                <img src="../Images/HiLo/Cards/6S.png" alt="6S" id="card20" class="hide">
+                <img src="../Images/HiLo/Cards/7C.png" alt="7C" id="card21" class="hide">
+                <img src="../Images/HiLo/Cards/7D.png" alt="7D" id="card22" class="hide">
+                <img src="../Images/HiLo/Cards/7H.png" alt="7H" id="card23" class="hide">
+                <img src="../Images/HiLo/Cards/7S.png" alt="7S" id="card24" class="hide">
+                <img src="../Images/HiLo/Cards/8C.png" alt="8C" id="card25" class="hide">
+                <img src="../Images/HiLo/Cards/8D.png" alt="8D" id="card26" class="hide">
+                <img src="../Images/HiLo/Cards/8H.png" alt="8H" id="card27" class="hide">
+                <img src="../Images/HiLo/Cards/8S.png" alt="8S" id="card28" class="hide">
+                <img src="../Images/HiLo/Cards/9C.png" alt="9C" id="card29" class="hide">
+                <img src="../Images/HiLo/Cards/9D.png" alt="9D" id="card30" class="hide">
+                <img src="../Images/HiLo/Cards/9H.png" alt="9H" id="card31" class="hide">
+                <img src="../Images/HiLo/Cards/9S.png" alt="9S" id="card32" class="hide">
+                <img src="../Images/HiLo/Cards/10C.png" alt="10C" id="card33" class="hide">
+                <img src="../Images/HiLo/Cards/10D.png" alt="10D" id="card34" class="hide">
+                <img src="../Images/HiLo/Cards/10H.png" alt="10H" id="card35" class="hide">
+                <img src="../Images/HiLo/Cards/10S.png" alt="10S" id="card36" class="hide">
+                <img src="../Images/HiLo/Cards/JC.png" alt="JC" id="card37" class="hide">               
+                <img src="../Images/HiLo/Cards/JD.png" alt="JD" id="card38" class="hide">
+                <img src="../Images/HiLo/Cards/JH.png" alt="JH" id="card39" class="hide">
+                <img src="../Images/HiLo/Cards/JS.png" alt="JS" id="card40" class="hide">
+                <img src="../Images/HiLo/Cards/KC.png" alt="KC" id="card41" class="hide">
+                <img src="../Images/HiLo/Cards/KD.png" alt="KD" id="card42" class="hide">
+                <img src="../Images/HiLo/Cards/KH.png" alt="KH" id="card43" class="hide">
+                <img src="../Images/HiLo/Cards/KS.png" alt="KS" id="card44" class="hide">
+                <img src="../Images/HiLo/Cards/QC.png" alt="QC" id="card45" class="hide">
+                <img src="../Images/HiLo/Cards/QD.png" alt="QD" id="card46" class="hide">
+                <img src="../Images/HiLo/Cards/QH.png" alt="QH" id="card47" class="hide">
+                <img src="../Images/HiLo/Cards/QS.png" alt="QS" id="card48" class="hide">
+                <img src="../Images/HiLo/Cards/AC.png" alt="AC" id="card49" class="hide">
+                <img src="../Images/HiLo/Cards/AD.png" alt="AD" id="card50" class="hide">
+                <img src="../Images/HiLo/Cards/AH.png" alt="AH" id="card51" class="hide">
+                <img src="../Images/HiLo/Cards/AS.png" alt="AS" id="card52" class="hide">
+                <img src="../Images/HiLo/Cards/red_back.png" alt="red_back" id="card53" class="playercard">
+                    <p id="dealer-text" class="dealer-text">Dealer</p>
+                    <p id="player-text" class="player-text">Player</p>  
+                <img src="../Images/HiLo/Cards/red_back.png" alt="red_back" id="card54" class="dealercard">
+                    <div class="buttonwraper"> <!--It's make buttons dont use the absolute postioning so they can be next to each other-->
+                        <div class="forms">    
+                            <form method="get">
+                                <input type="text" readonly class="bet betform" id="bet" value="0"/>
+                            </form>
+                        </div>    
+                        <button class="bets" id="button1" ><label class="text" for="button1">+100</label></button>
+                        <button class="bets" id="button2" ><label class="text" for="button2">+500</label></button>
+                        <button class="bets" id="button5" ><label id="betlabel" class="text" for="button5">Play</label></button>
+                        <!-- <button class="hide" id="button6" ><label id="show" class="text" for="button6">Show</label></button> -->
+                        <button class="hide" id="button7" ><label id="retry" class="text" for="button7">Again</label></button>
+                        <button class="bets" id="button3" ><label class="text" for="button3">-100</label></button>
+                        <button class="bets" id="button4" ><label class="text" for="button4">-500</label></button>
+                   
+                    </div>
+                    <div id="div-round-info" class="hide">
+                        <p id="round-info">You won</p>
+                    </div>
+                    <div class="balance">
+                        <p id="balance-amount">Actual balance</p>
+                        <form method="get">
+                            <input type="text" readonly class="balanceform" id="balance" value="0"/>
+                        </form>
+                    </div> 
+            </div>
+        </div>  
+    </section>
+    <section id="settings" class="settings">    
+        <div class="div-flags">
+            <img class="flags" id="pl" src="../Images/HiLo/Flag_PLpng.png" alt="Flag PL">
+            <img class="flags" id="en" src="../Images/HiLo/Flag_EN.png" alt="Flag EN">
+            <div class="settings-choose">
+                <p>Wybierz Język/Choose Langauge</p>
+            </div>
+        </div>
+    </section>
+    <section id="lose-window" class="hide">
+        <div id="div-textlose" class="textlose">
+            <p id="textlose">It seems that you your balance equal 0, but don't worry! Another 500 have been just added! Have fun!</p><br>
+            <p id="textlose2">(Click to continue)</p>
+        </div>
+    </section>
+    <!-- <section id="change-name" class="hide">
+        <form method="get">
+            <input type="text" class="name-form" id="PlayerName" value="Player"/>
+        </form>
+        <button class="name-button" id="NameSubmit">
+    </section>   -->
+</body>
+</html>                                                                                                                     <!--Made by Robert Żółtowski-->

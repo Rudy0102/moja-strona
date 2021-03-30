@@ -1,0 +1,80 @@
+/* NAV SECTION */
+:root{
+    --nav-background-color: #092BB1;
+    --nav-color: #eee; 
+    --nav-hover-background-color: #eee;
+    --nav-hover-color: #092BB1;
+    --main-background-color: #eee;
+}
+@media screen and (max-width: 715px){
+    nav .nav-text{
+        display: none;
+    }
+}
+html {
+    font-size: 16px;
+}
+body{
+    background-color: var(--main-background-color);
+}
+nav {
+    position: sticky;
+    display: inline-block;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+nav, nav li{
+    background-color: var(--nav-background-color);
+    color: var(--nav-color);
+}
+nav .nav-name{
+    display: block;
+    float: left;
+    padding: 1rem;
+}
+nav ul {
+    float: right;
+}
+nav li {
+    display: block;
+    float: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: background-color 0.5s,color 0.5s;
+}
+nav li:hover{
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-color);
+}
+nav .lastname{
+    float: left;
+}
+nav .lastname .nav-name{
+    font-size: 1.5rem;
+}
+/* FOOTER SECTION */
+footer{
+    background-color: var(--nav-background-color);
+    color: var(--nav-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;   
+}
+footer .div-icons a{
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+footer .div-icons a img{
+    height: 1rem;
+}
+footer .div-icons ul{
+    list-style: none;
+}
+footer .div-icons ul li{
+    display: flex;
+    float: left;
+}

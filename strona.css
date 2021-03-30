@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --nav-background-color: #092BB1;
+    --nav-color: #ddd; 
+    --nav-hover-background-color: #ddd;
+    --nav-hover-color: #092BB1;
+    --body-background-color: #ddd;
+    --main-background-color: #607EF6;
+    --text-shadow-color: #000;
+}
+/* Media queries*/
+@media (max-width: 720px){
+    nav .nav-text{
+        display: none;
+    }
+    main{
+        grid-template-areas: 
+            'experience experience experience experience'
+            'education education education education'
+            'section3 section3 section3 section3'
+            'section4 section4 section4 section4' !important;
+    }
+}
+@media (min-width: 721px) and (max-width: 1200px){
+    main{
+        grid-template-areas: 
+            'experience experience education education'
+            'section3 section3  section4 section4' !important;
+    }
+}
+body{
+    background-color: var(--body-background-color);
+}
+/* NAV SECTION */
+nav {
+    position: sticky;
+    display: inline-block;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+nav, nav li{
+    background-color: var(--nav-background-color);
+    color: var(--nav-color);
+}
+nav .nav-name{
+    display: block;
+    float: left;
+    padding: 1rem;
+}
+nav ul {
+    float: right;
+}
+nav li {
+    display: block;
+    float: left;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: background-color 0.5s,color 0.5s;
+}
+nav li:hover{
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-color);
+}
+nav .lastname{
+    float: left;
+}
+nav .lastname .nav-name{
+    font-size: 1.5rem;
+}
+/* FOOTER SECTION */
+footer{
+    background-color: var(--nav-background-color);
+    color: var(--nav-color);
+    position: fixed;
+    height: 1.5rem;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;   
+}
+footer .div-icons a{
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+footer .div-icons a img{
+    height: 1rem;
+}
+footer .div-icons ul{
+    list-style: none;
+}
+footer .div-icons ul li{
+    display: flex;
+    float: left;
+}
+/*MAIN SECTION*/
+main{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "experience education section3 section4";
+    gap: 1rem;
+    height: fit-content;
+    /* height: calc(100vh - 9rem); */
+    --border-color: #eee;
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-background-color);
+    border-radius: 4rem;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+    width: 15rem;
+    color: var(--nav-color);
+    text-shadow: -1px -1px 0 var(--text-shadow-color), 1px -1px 0 var(--text-shadow-color), -1px 1px 0 var(--text-shadow-color), 1px 1px 0 var(--text-shadow-color);
+}
+main section .div-section{
+    margin: 0.5rem 0;
+}
+main section .div-section p{
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+main .experience{
+    grid-area: experience;
+}
+main .education{
+    grid-area: education;  
+}
+main .section3{
+    grid-area: section3;
+}
+main .section4{
+    grid-area: section4;
+}
+/* My abstarct classes and animtaions*/
+.none{
+    display: none;
+}
+.slideup{
+    animation-name: slideup;
+    animation-duration: 3s;
+}
+.slideleft{
+    animation-name: slideleft;
+    animation-duration: 3s;
+}
+.slideright{
+    animation-name: slideright;
+    animation-duration: 3s;
+}
+@keyframes slideup{
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes slideleft{
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes slideright{
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+/* Styles for page project*/
+/* .projects{
+    background-color: var(--main-background-color);
+} */
+.projects-main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    margin: auto;
+}
+.projects-main div{
+    display: flexbox;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5rem;
+    background-color: var(--main-background-color);
+}
+.projects-main h1{
+    color: var(--nav-color);
+    text-shadow: -1px -1px 0 var(--text-shadow-color), 1px -1px 0 var(--text-shadow-color), -1px 1px 0 var(--text-shadow-color), 1px 1px 0 var(--text-shadow-color);
+}
+.projects-list{
+    margin: 2rem;
+    list-style: none;
+    width: max-content;
+}
+.projects-list li{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--nav-background-color);
+}
+.projects-list li a{
+    color: var(--nav-color);
+}
+.projects-list li a:visited{
+    color: #b37ecc;
+}
